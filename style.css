@@ -1,0 +1,210 @@
+/* css besic setup */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+}
+ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+/* ====================
+Css start
+==================== */
+.container
+{
+    color: #444;
+    background-color: #eee;
+}
+#show-hide
+{
+    display: none;
+}
+#logo
+{
+    color: #ddd;
+    text-align: left;
+}
+header
+{
+    padding: 2% 5%;
+    background-image: linear-gradient(deepskyblue,gray,deepskyblue);
+    display: grid;
+    grid-template-columns:35% 65%;
+}
+#navbar ul
+{
+    padding: 2% 5%;
+    text-align: right;
+    margin: auto;
+}
+#navbar ul li a
+{
+    border-radius: 10px;
+    background-image: linear-gradient(gray,lime,gray);
+    padding: 5px 15px;
+    color: aqua;
+}
+#navbar ul li a:hover
+{
+    background-image: linear-gradient(lime,gray,lime);
+}
+main
+{
+    padding: 2% 5%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5%;
+}
+footer
+{
+    margin-top: 10px;
+    color: azure;
+    text-align: center;
+    padding: 2% 5%;
+    background-image: linear-gradient(#444,#777,#444);
+}
+.services, .lorem, h2
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    color: mediumvioletred;
+    border-radius: 10px;
+    background-image: radial-gradient(deepskyblue,hotpink);
+}
+legend
+{
+    color: salmon;
+    text-align: center;
+}
+fieldset
+{
+    background-image: radial-gradient(gray,blue,deepskyblue);
+    border-radius: 50px;
+}
+input
+{
+    padding: 8px;
+}
+input:hover
+{
+    font-size: large;
+}
+input:focus
+{
+    font-size: large;
+    font-weight: bold;
+    color: whitesmoke;
+}
+input, label
+{
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    color: springgreen;
+    text-align: center;
+    background-color: transparent;
+}
+.button
+{
+    width: 80%;
+}
+#address
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.signup
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+/*===========================
+Responsive start
+============================*/
+/*=============
+for tablet screen
+==============*/
+@media only screen and (min-width:501px) and (max-width:767px)
+{
+    main
+    {
+        grid-template-columns: auto auto;
+    }
+    header
+    {
+        grid-template-columns: auto;
+    }
+    .blog
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #logo
+    {
+        text-align: center;
+    }
+    #navbar ul
+    {
+        text-align: center;
+    }
+}
+/*===============
+for mobile phone screen
+===============*/
+@media only screen and (max-width:500px)
+{
+    header
+    {
+        grid-template-columns: 90% 10%;
+    }
+    main
+    {
+        grid-template-columns: auto;
+    }
+    #navbar
+    {
+        /* width: 100%; */
+        visibility: hidden;
+        position: absolute;
+    }
+    #show-hide
+    {
+        display:block;
+        margin: auto;
+        color: aliceblue;
+    }
+    ul li
+    {
+        background-color: rgba(73, 63, 63, 0.307);
+        display: block;
+        padding-top: 15px;
+    }
+    #show-hide:hover + nav
+    {
+        width: 100%;
+        visibility: visible;
+        /* display: block; */
+        /* position: static; */
+    }
+    #navbar:hover
+    {
+        width: 100%;
+        visibility: visible;
+        /* display: block; */
+        /* position: static; */
+    }
+    #login
+    {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}

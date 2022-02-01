@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="logo">Coder's Team</h1>
+            <h4 id="show-hide">Menu</h4>
+            <nav id="navbar">
+                    <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="address">
+                <div>
+                    <h2>Address</h2>
+                    <address>
+                        &#10070;Name&#187; Jahurul Isalm <br>
+                        &#10070;Home&#187; Patgram <br>
+                        &#10070;Zilla&#187;Lalmonirhat <br>
+                        &#10070;Division&#187;Rangpur <br>
+                        &#10070;Country&#187;Bangladesh.
+                    </address>
+                </div>
+                <div>
+                    <h2>Communication</h2>
+                    &#10070;Facebook Group&#187;Listen Coder's Community<br>
+                    &#10070;Link&#187;<a href="https://web.facebook.com/groups/listencoderscommunity" target="_blank">Listen Coder's Community</a>
+                </div>
+            </div>
+            <div id="login">
+                <fieldset>
+                    <legend>Log In</legend>
+                    <Label for="username">User Name</Label>
+                    <input type="text" name="username" id="username" placeholder="User Name" required>
+                    <label for="pass">Inter Your Password</label>
+                    <input type="password" name="pass" id="pass" placeholder="Password" required>
+                    <input class="button" type="submit" value="Log In">
+                </fieldset>
+            </div>
+            <div class="signup">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <form action="#" method="post">
+                        <label for="name">Your full name</label>
+                        <input type="text" name="name" id="name" placeholder="Full Name" required>
+                        <label for="Mail">Email</label>
+                        <input type="email" placeholder="Inter valid email" required/>
+                        <label for="number">Inter your mobile no.</label>
+                        <input type="tel" name="number" id="tel" placeholder="017143018**">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" name="dob" id="dob" required>
+                        <label for="username">Choose Username</label>
+                        <input type="text" name="username" id="username" placeholder="User Name" required>
+                        <label for="password">Choose a strong password</label>
+                        <input type="password" name="password" id="password" placeholder="Password Case Sensitive" required>
+                        <input type="reset" value="Clean Up Form">
+                        <label for="agrement">I accept all terms and conditions</label>
+                        <input type="checkbox" name="agrement" id="agrement" required>
+                        <input class="button" type="submit" value="Sign Up">
+                        </form>
+                </fieldset>
+            </div>
+        </main>
+        <footer>
+            <p>copyright&#169;2022 Allrights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
